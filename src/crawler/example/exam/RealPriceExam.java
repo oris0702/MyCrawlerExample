@@ -34,7 +34,7 @@ public class RealPriceExam {
 		// 印出整份 XML 資料
 //		System.out.println(jsoupDoc.toString());
 
-		// print head
+		// print head　
 		System.out.println("鄉鎮市區,都市土地使用分區,土地區段位置或建物區門牌,總價元,單價每平方公尺");
 
 		for( Element elem: jsoupDoc.select("買賣") ){
