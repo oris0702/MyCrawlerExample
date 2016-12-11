@@ -21,7 +21,7 @@ public class YoubikeData {
 
         // 遠端真實路徑，但資料有gzip壓縮過
         //String uri = "https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz";
-
+		//https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz
 		// 遠端真實路徑，使用gzip解壓縮
 		String uri = "gz:https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz";
 

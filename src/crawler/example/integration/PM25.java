@@ -43,7 +43,10 @@ public class PM25 {
 
         for(Element elem: jsoupDoc.select("Data")){
 //            System.out.println(elem.toString());
-            System.out.println( elem.getElementsByTag("pm2.5").text() );
+//            System.out.print( "SiteName:"+elem.getElementsByTag("SiteName").text()+" " );
+            System.out.print( elem.getElementsByTag("SiteName").text()+" " );
+//            System.out.print( "County:"+elem.getElementsByTag("County").text() +" ");
+            System.out.println( "PM2.5:"+elem.getElementsByTag("pm2.5").text() );
 
         }
     }

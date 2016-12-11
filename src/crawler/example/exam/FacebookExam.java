@@ -34,11 +34,11 @@ public class FacebookExam {
 				.getFromJson(uri)
 				.select("data");
 		
-		String output = "message,reactions:\n";
+		String output = "id,reactions(LIKE):\n";
 
 		// 遂筆處理
 		for( Element data: elems ){
-			String id = data.select("message").text();
+			String id = data.select("id").text();
 
 			// FIXIT
 			String reactions = data.select("reactions").text();
