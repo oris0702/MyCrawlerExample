@@ -22,7 +22,7 @@ public class PM25ElasticImport {
 
     public static void main(String[] args) {
 
-        // 遠端資料路徑
+        // 遠端資料路徑 
         String uri = "http://opendata2.epa.gov.tw/AQX.xml";
 
         Document jsoupDoc = CrawlerPack.start().getFromXml(uri);
